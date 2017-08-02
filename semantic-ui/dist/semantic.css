@@ -12111,9 +12111,9 @@ img.ui.bordered.image {
   text-align: left;
   line-height: 1.21428571em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  padding: 0.67857143em 1em;
+  padding: 3.5px 0px;
   background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 1px solid #878e99;
   color: rgba(0, 0, 0, 0.87);
   border-radius: 0.28571429rem;
   -webkit-transition: border-color 0.1s ease, -webkit-box-shadow 0.1s ease;

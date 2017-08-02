@@ -1,3 +1,5 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@padding: 3.5px 0px;
+@border: 1px solid #878e99;

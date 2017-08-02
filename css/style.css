@@ -118,7 +118,7 @@ main{
     font-size: 14px;
 }
 .crm-inner-content-one{
-    padding: 15px 0 12px 0;
+    padding: 16px 0 8px 0;
     border-bottom: 1px solid #dfe2e5;
 }
 .crm-inner-content-one-a1{
@@ -160,6 +160,9 @@ main{
     overflow-y: scroll;
     height: 650px;
     background: #fff;
+}
+.ui.table.center tr td{
+    text-align: center;
 }
 .table-p1{
     margin-left: 20%;
@@ -220,16 +223,18 @@ main{
     overflow: hidden;
     margin: 0 auto;
     width: 300px;
-    padding: 12px 0;
+    padding: 10px 0;
 }
 .new-duty-two li{
-    margin: 20px 0;
+    margin: 15px 0;
     text-align: center;
 }
 .new-duty-two label{
-    margin-right: 25px;
+    margin-right: 14px;
+    width: 70px;
     height: 30px;
     line-height: 30px;
+    text-align: right;
 }
 .new-duty-input-01{
     width: 200px;
@@ -248,4 +253,32 @@ main{
 
 .new-duty-three div:first-child{
     margin-right: 15px;
+}
+/*----店铺权限--*/
+.shop-permissions li{
+    text-align: left;
+}
+
+
+/*--用户权限管理---*/
+.input-text-01{
+    margin-left: 15px;
+}
+.input-text-01 input{
+    width: 125px;
+}
+.checkbox-crm1{
+    margin: 15px 0 15px 30px;
+}
+.checkbox-crm1 label > input{
+    width: 85px;
+    height: 25px;
+    color: #354052;
+    background: #fff;
+    border: 1px solid #9ca6ad;
+    cursor: pointer;
+}
+.orange-td{
+    color: #e53d00;
+    cursor: pointer;
 }

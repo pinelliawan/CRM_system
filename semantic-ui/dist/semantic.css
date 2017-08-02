@@ -18540,7 +18540,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .grouped.fields .field,
 .ui.form .grouped.inline.fields .field {
   display: block;
-  margin: 0.5em 0em;
+  margin: 1.2em 0;
   padding: 0em;
 }
 
@@ -29357,7 +29357,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #2185D0 !important;
+  background-color: #5fb878 !important;
 }
 
 .ui.toggle.checkbox input:checked ~ .box:after,

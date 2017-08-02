@@ -96,7 +96,7 @@
                             <label><input id="input-button-01" type="button" name="批量维护" value="批量维护"></label>
                         </div>
                         <!--batch-maintain--批量维护--弹框-->
-                        <div class="new-duty batch-maintain">
+                        <div class="taps-common batch-maintain">
                             <div class="new-duty-one">
                                 <h4>批量维护</h4>
                                 <i class="ui icon remove" id="batch-maintain1"></i>
@@ -104,20 +104,20 @@
                             <ul class="new-duty-two">
                                 <li>
                                     <div class="ui input">
-                                        <label>描述</label>
+                                        <span>描述</span>
                                         <input class="new-duty-input-01" type="text" name="责任细分">
                                     </div>
                                 </li>
                                 <li>
                                     <div class="ui input">
-                                        <label>店铺权限</label>
-                                        <input class="new-duty-input-01" type="text" name="责任细分">
+                                        <span>店铺权限</span>
+                                        <p class="new-duty-p-01" id="new-duty-p-01">点击选择</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="ui input">
-                                        <label>店铺权限</label>
-                                        <input class="new-duty-input-01" type="submit" name="责任细分">
+                                        <span>责任权限</span>
+                                        <p class="new-duty-p-01" id="new-duty-p-02">点击选择</p>
                                     </div>
                                 </li>
                                 <li><p class="new-duty-two-tap1">*批量维护时，覆盖原有的权限设置</p></li>
@@ -128,6 +128,122 @@
                                 </div>
                                 <div class="ui button">
                                     取消
+                                </div>
+                            </div>
+
+                            <!--弹框2-店铺权限-->
+                            <div class="taps-common shop-permissions">
+                                <div class="new-duty-one">
+                                    <h4>店铺权限</h4>
+                                    <i class="ui icon remove" id="shop-permissions1"></i>
+                                </div>
+                                <ul class="new-duty-two shop-permissions-ul">
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">箭牌</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-jian">
+                                                    <label for="checkbox-jian">箭牌旗舰店</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">TOTO</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-toto">
+                                                    <label for="checkbox-toto">TOTO天猫专营店</label>
+                                                </div>
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-dong">
+                                                    <label for="checkbox-dong">东箭TOTO天猫专营店</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">东鹏</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-peng">
+                                                    <label for="checkbox-peng">东鹏旗舰店</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">芝华士</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1" >
+                                                    <input type="checkbox" id="checkbox-zhi" >
+                                                    <label for="checkbox-zhi">芝华士</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="new-duty-four">
+                                    <div class="ui orange button">
+                                        确定
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--弹框3-责任权限-->
+                            <div class="taps-common duty-permissions">
+                                <div class="new-duty-one">
+                                    <h4>责任权限</h4>
+                                    <i class="ui icon remove" id="duty-permissions1"></i>
+                                </div>
+                                <div class="ui form form-crm1">
+                                    <div class="grouped fields">
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>物流</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>产品</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>安装</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>信息部</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-duty-four">
+                                    <div class="ui orange button">
+                                        确定
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -161,8 +277,8 @@
                                     <td></td>
                                     <td>[所有店铺]</td>
                                     <td>[所有责任]</td>
-                                    <td class="orange-td">店铺维护</td>
-                                    <td class="orange-td">责任维护</td>
+                                    <td class="orange-td orange-td1">店铺维护</td>
+                                    <td class="orange-td orange-td2">责任维护</td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -177,8 +293,8 @@
                                     <td></td>
                                     <td>TOTO、箭牌</td>
                                     <td>[所有责任]</td>
-                                    <td class="orange-td">店铺维护</td>
-                                    <td class="orange-td">责任维护</td>
+                                    <td class="orange-td orange-td1">店铺维护</td>
+                                    <td class="orange-td orange-td2">责任维护</td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -193,11 +309,127 @@
                                     <td></td>
                                     <td>[所有店铺]</td>
                                     <td>[所有责任]</td>
-                                    <td class="orange-td">店铺维护</td>
-                                    <td class="orange-td">责任维护</td>
+                                    <td class="orange-td orange-td1">店铺维护</td>
+                                    <td class="orange-td orange-td2">责任维护</td>
                                 </tr>
                                 </tbody>
                             </table>
+
+                            <!--弹框4-店铺维护-->
+                            <div class="taps-common shop-preserve">
+                                <div class="new-duty-one">
+                                    <h4>店铺维护</h4>
+                                    <i class="ui icon remove" id="shop-preserve1"></i>
+                                </div>
+                                <ul class="new-duty-two shop-permissions-ul">
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">箭牌</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-jian1">
+                                                    <label for="checkbox-jian1">箭牌旗舰店</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">TOTO</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-toto1">
+                                                    <label for="checkbox-toto1">TOTO天猫专营店</label>
+                                                </div>
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-dong1">
+                                                    <label for="checkbox-dong1">东箭TOTO天猫专营店</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">东鹏</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1">
+                                                    <input type="checkbox" id="checkbox-peng1">
+                                                    <label for="checkbox-peng1">东鹏旗舰店</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ui accordion">
+                                            <div class="title">
+                                                <i class="blue dropdown icon"></i>
+                                                <p class="shop-permissions-p1">芝华士</p>
+                                            </div>
+                                            <div class="content">
+                                                <div class="ui checkbox lable-crm1" >
+                                                    <input type="checkbox" id="checkbox-zhi1" >
+                                                    <label for="checkbox-zhi1">芝华士</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="new-duty-four">
+                                    <div class="ui orange button">
+                                        确定
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--弹框5-责任维护-->
+                            <div class="taps-common duty-preserve">
+                                <div class="new-duty-one">
+                                    <h4>责任权限</h4>
+                                    <i class="ui icon remove" id="duty-preserve1"></i>
+                                </div>
+                                <div class="ui form form-crm1">
+                                    <div class="grouped fields">
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>物流</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>产品</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>安装</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui checkbox">
+                                                <input type="checkbox" name="example2" >
+                                                <label>信息部</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="new-duty-four">
+                                    <div class="ui orange button">
+                                        确定
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="crm-inner-content-two-fan">
@@ -220,48 +452,6 @@
                     </div>
 
                 </div><!--crm-inner-content--over-->
-
-            <!--弹框2-->
-                <div class="new-duty" style="display: block; position: absolute;top: 45%; left: 50%;">
-                    <div class="new-duty-one">
-                        <h4>店铺权限</h4>
-                        <i class="ui icon remove"></i>
-                    </div>
-                    <ul class="new-duty-two shop-permissions">
-                        <li>
-                            <div class="ui accordion">
-                                <div class="title">
-                                    <i class="blue dropdown icon"></i>
-                                    箭牌
-                                </div>
-                                <div class="content">
-                                    <div class="ui checkbox">
-                                        <input type="checkbox" name="箭牌旗舰店">
-                                        <label>箭牌旗舰店</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-
-                        </li>
-                        <li>
-
-                        </li>
-                        <li>
-
-                        </li>
-                    </ul>
-                    <div class="new-duty-three">
-                        <div class="ui orange button">
-                            保存
-                        </div>
-                        <div class="ui button">
-                            取消
-                        </div>
-                    </div>
-                </div>
-
 
             </div><!--crm-inner--over-->
         </div><!--crm-content--over-->
@@ -327,6 +517,42 @@
     $('.ui.accordion')
         .accordion()
     ;
+
+    /*--店铺权限--*/
+    $("#new-duty-p-01").click(function(){
+        $(".shop-permissions").show();
+    });
+
+    $("#shop-permissions1").click(function(){
+        $(".shop-permissions").hide();
+    });
+
+    /*--责任权限--*/
+    $("#new-duty-p-02").click(function(){
+        $(".duty-permissions").show();
+    });
+
+    $("#duty-permissions1").click(function(){
+        $(".duty-permissions").hide();
+    });
+
+    /*--店铺维护--*/
+    $(".orange-td1").click(function(){
+        $(".shop-preserve").show();
+    });
+
+    $("#shop-preserve1").click(function(){
+        $(".shop-preserve").hide();
+    });
+
+    /*--责任权限--*/
+    $(".orange-td2").click(function(){
+        $(".duty-preserve").show();
+    });
+
+    $("#duty-preserve1").click(function(){
+        $(".duty-preserve").hide();
+    });
 </script>
 </body>
 </html>

@@ -197,12 +197,14 @@ main{
 
 /*--新建分类--弹框--*/
 .new-duty{
-    display: none;
     position: absolute;
     top: 35%;
     left: 42%;
     z-index: 2;
     width: 375px;
+}
+.taps-common{
+    display: none;
     border: 1px solid #a3a4a7;
     box-shadow: 1px 1px 2px 2px rgba(163,164,167,0.5);
     background: #fff;
@@ -229,7 +231,7 @@ main{
     margin: 15px 0;
     text-align: center;
 }
-.new-duty-two label{
+.new-duty-two span{
     margin-right: 14px;
     width: 70px;
     height: 30px;
@@ -254,11 +256,6 @@ main{
 .new-duty-three div:first-child{
     margin-right: 15px;
 }
-/*----店铺权限--*/
-.shop-permissions li{
-    text-align: left;
-}
-
 
 /*--用户权限管理---*/
 .input-text-01{
@@ -281,4 +278,73 @@ main{
 .orange-td{
     color: #e53d00;
     cursor: pointer;
+}
+/*--batch-maintain--批量维护---*/
+.batch-maintain{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 2;
+    width: 375px;
+}
+.new-duty-p-01{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #878e99;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*--责任权限--*/
+.duty-permissions{
+    position: absolute;
+    top: 0;
+    left: 105%;
+    z-index: 3;
+    width: 305px;
+}
+.form-crm1{
+    width: 180px;
+    margin: 35px auto;
+}
+.new-duty-four{
+    margin: 0 14px;
+    padding: 18px 30px 18px 0;
+    text-align: right;
+    border-top: 1px solid #000;
+}
+/*----店铺权限--*/
+.shop-permissions{
+    position: absolute;
+    top: 0;
+    right: 105%;
+    z-index: 2;
+    width: 350px;
+}
+.shop-permissions-ul li{
+    text-align: left;
+    margin: 10px auto;
+}
+.lable-crm1{
+    margin: 10px 0 5px 45px;
+}
+.shop-permissions-p1{
+    display: inline;
+    color: #000;
+}
+
+/*----店铺维护--shop-preserve--*/
+.shop-preserve{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: 2;
+    width: 350px;
+}
+.duty-preserve{
+    position: absolute;
+    top: 52%;
+    right: 15%;
+    z-index: 2;
+    width: 305px;
 }

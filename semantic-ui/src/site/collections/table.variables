@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@headerBackground: #d8dfe6;
+@stripedBackground: #fafbfc;
+@headerBorder: none;
+@rowBorder: none;
+@border: none;

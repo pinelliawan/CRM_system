@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@border: none;
+@itemVerticalPadding: 8px;
+@itemHorizontalPadding: 7px;

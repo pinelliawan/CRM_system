@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+ @contentPadding: 0px;
+ @titleFontSize: 16px;
+ @titleColor: rgba(152,158,172);

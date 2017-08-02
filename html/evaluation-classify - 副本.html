@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CRM评价系统</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../semantic-ui/dist/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="../semantic-ui/dist/semantic.min.js"></script>
+</head>
+<body>
+<main>
+    <div class="crm-wrap">
+        <!--content-->
+        <div class="crm-content">
+            <div class="crm-inner">
+                <div class="crm-inner-top">
+                    <div class="crm-inner-top-left">
+                        <i class="caret left icon blue"></i>
+                        <i class="large content icon"></i>
+                    </div>
+                    <div class="crm-inner-top-right">
+                        <div class="ui labeled icon menu">
+                            <a class="item">
+                                <img class="ui mini image" src="../images/crm-team.png">
+                                <p>XX部门</p>
+                            </a>
+                            <a class="item">
+                                <img class="ui mini image" src="../images/crm-user.png">
+                                <p>用户</p>
+                            </a>
+                            <a class="item">
+                                <img class="ui mini image" src="../images/crm-exit.png">
+                                <p>退出</p>
+                            </a>
+                            <a class="item">
+                                <img class="ui mini image" src="../images/crm-setting.png">
+                                <p>设置</p>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--crm-inner-top--over-->
+
+                <div class="crm-inner-content">
+                    <div class="crm-inner-content-nav">
+                        <div class="ui breadcrumb" id="breadcrumb-m1">
+                            <a class="section">评价操作</a>
+                            <i class="right icon "> > </i>
+                            <a class="section">评价分类管理</a>
+                        </div>
+                    </div>
+
+                    <div class="crm-inner-content-one">
+                        <div class="crm-inner-content-one-a1">
+                            <label>责任分类</label>
+                            <div class="ui compact selection dropdown">
+                                <div class="text back-img-01">产品</div>
+                                <div class="menu">
+                                    <div class="item">产品</div>
+                                    <div class="item">缺货</div>
+                                    <div class="item">物流</div>
+                                    <div class="item">安装</div>
+                                    <div class="item">店铺责任</div>
+                                    <div class="item">财务</div>
+                                    <div class="item">客服</div>
+                                    <div class="item">信息部</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="crm-inner-content-one-a1">
+                            <label>状态</label>
+                            <div class="ui compact selection dropdown">
+                                <div class="text back-img-01">全部</div>
+                                <div class="menu">
+                                    <div class="item">全部</div>
+                                    <div class="item">有效</div>
+                                    <div class="item">无效</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="crm-inner-content-one-a1">
+                            <div class="ui right icon button" id="back-img-02">
+                                查询
+                                <i class="icon "><img src="../images/crm-search.png"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="crm-inner-content-two">
+                        <div class="ui button" style="background: #5d5e61; color: #fff;margin: 15px 0 15px 65px;">
+                            新建责任分类
+                        </div>
+
+                        <div class="crm-inner-content-two-table">
+                            <table class="ui striped center table">
+                                <thead>
+                                <tr>
+                                    <th><p class="table-p1">责任分类</p></th>
+                                    <th>责任细分</th>
+                                    <th>有效</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><p class="table-p2">产品</p></td>
+                                    <td>质量问题</td>
+                                    <td>
+                                        <div class="ui test toggle checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p class="table-p2">产品</p></td>
+                                    <td>包装问题</td>
+                                    <td>
+                                        <div class="ui test toggle checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p class="table-p2">缺货</p></td>
+                                    <td>缺货</td>
+                                    <td>
+                                        <div class="ui test toggle checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p class="table-p2">物流</p></td>
+                                    <td>时效慢</td>
+                                    <td>
+                                        <div class="ui test toggle checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p class="table-p2">物流</p></td>
+                                    <td>服务差</td>
+                                    <td>
+                                        <div class="ui test toggle checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <label></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p class="table-p2">物流</p></td>
+                                    <td>速度慢</td>
+                                    <td>
+                                        <div class="crm-div1">
+                                            <img class="table-img-on" src="../images/crm-icon-on.png">
+                                            <img class="table-img-off" src="../images/crm-icon-off.png">
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <script>
+                                    $(".table-img-off").click(function(){
+                                        $(".table-img-off").hide();
+                                        $(".table-img-on").show();
+                                    });
+
+                                    $(".table-img-on").click(function(){
+                                        $(".table-img-off").show();
+                                        $(".table-img-on").hide();
+                                    });
+                                </script>
+                            </table>
+                        </div>
+
+                        <div class="crm-inner-content-two-fan">
+                            <div class="ui pagination menu right floated">
+                                <a class="item">
+                                    <i class="angle double left icon"></i>上一页</a>
+                                <a class="active item">1</a>
+                                <a class="item">2</a>
+                                <a class="item">3</a>
+                                <a class="item">4</a>
+                                <a class="item">5</a>
+                                <a class="item">6</a>
+                                <a class="item">
+                                    下一页 <i class="icon angle double right"></i>
+                                </a>
+                                <a class="item">到第<input class="item-input1" type="text">页</a>
+                                <a class="item"><input class="item-input2" type="button" value="确定"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--crm-inner-content--over-->
+
+
+            </div><!--crm-inner--over-->
+        </div><!--crm-content--over-->
+
+        <!----left---->
+        <div class="crm-navigation">
+            <!--navigation--top-->
+            <div class="crm-banner-h2">
+                <h2>CRM</h2>
+                <div class="crm-banner-list">
+                    <h3>评价操作</h3>
+                    <ul class="navigation-ul0">
+                        <li class="crm-another"><a href="#"><img src="../images/crm-icon-b1.png"> 分类类型维护</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b2.png">运营中心维护</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b3.png">用户权限管理</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b4.png">异常单处理</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b5.png">评价分类管理</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b6.png">评价责任管理</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b7.png">评价申诉管理</a></li>
+                    </ul>
+                    <script>
+                        $(function(){
+                            $(".navigation-ul0 li").click(function(){
+                                $(this).addClass("crm-another").siblings("li").removeClass("crm-another");
+                            });
+                        });
+                    </script>
+                </div>
+                <!---->
+                <hr class="hr-one">
+                <div class="crm-banner-list banner-list-t1">
+                    <h3>评价报表</h3>
+                    <ul class="navigation-ul0">
+                        <li><a href="#"><img src="../images/crm-icon-b8.png">分类总表</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b9.png">分类汇总表</a></li>
+                        <li><a href="#"><img src="../images/crm-icon-b10.png">评价率</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div><!--crm-navigation--over-->
+
+    </div>
+</main>
+<script>
+    $('.dropdown')
+        .dropdown({
+            // 你可以使用任何过渡
+            transition: 'drop'
+        })
+    ;
+</script>
+</body>
+</html>

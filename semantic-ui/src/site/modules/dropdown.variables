@@ -1,0 +1,5 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@selectionBorder: none;
+@selectionPadding: 0px 0px 0px 16px;;
